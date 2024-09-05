@@ -1,0 +1,183 @@
+body, html{
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+    background-color: rgb(0, 50, 51);
+}
+
+.img{
+    display: flex;
+}
+
+:root{
+    --heading-size: clamp(1rem, 3vw, 4vw);
+    --white-color: white; 
+    --beige-color: beige;
+    --black-color: black;
+    --font-700: 700;
+    --font-600: 600;
+}
+
+/* GLOBAL */
+/* Center Display */
+.center{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* All heading 1 and 2 */
+h1, h2{
+    text-align: center;
+}
+
+/* Fade In Animation */
+.about-fade-in{
+    transition: all 300ms;
+    transform: translateY(2rem);
+    opacity: 0;
+}
+
+/* Fade In Animation when visible */
+.about-fade-in.visible{
+    transform: translateY(0rem);
+    opacity: 1;
+}
+
+/* Fade In Animation */
+.main-fade-in{
+    transition: all 300ms;
+    transform: translateY(2rem);
+    opacity: 0;
+}
+
+/* Fade In Animation when visible */
+.main-fade-in.visible{
+    transform: translateY(0rem);
+    opacity: 1;
+}
+
+
+/* Fade In Animation */
+.footer-fade-in{
+    transition: all 300ms;
+    transform: translateY(2rem);
+    opacity: 0;
+}
+
+/* Fade In Animation when visible */
+.footer-fade-in.visible{
+    transform: translateY(0rem);
+    opacity: 1;
+}
+
+/* Navigation Bar */
+nav{
+    background-color: #1f1f1f;
+    border: rgb(72, 71, 71) solid 0.2px;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Anchor Navigations */
+.anchor-nav{
+    text-transform: capitalize;
+    font-size: 1.20rem;
+    color: var(--white-color);
+    text-decoration: none;
+    flex: 1 400px 0;
+    text-align: center;
+    transition: all 400ms;
+}
+
+/* Anchor Nav Buttons Hover */
+.anchor-nav:hover{
+    color: var(--beige-color);
+}
+
+/* // HERO */
+.hero{
+
+}
+
+/* Hero Title */
+.hero-title{
+    font-size: var(--heading-size);
+    color: var(--beige-color);
+    font-weight: var(--font-700);
+}
+
+
+/* // ABOUT */
+.about{
+
+}
+
+/* About Title */
+.about-title{
+    font-size: var(--heading-size);
+    color: var(--beige-color);
+    font-weight: var(--font-600);
+    align-items: center;
+    display: flex;
+    
+}
+
+/* About Space */
+.about-space{
+    padding-inline: 0.5rem;
+}
+
+/* About Image */
+.about-image{
+    max-width: 100rem;
+    width: 100%;
+    height: auto;
+}
+
+/* About Description */
+.about-description{
+    color: var(--beige-color);
+    max-width: 50rem;
+    width: auto;
+    height: auto;
+    line-height: 150%;
+    padding-inline: 2rem;
+}
+
+
+/* // Main */
+.main{
+
+}
+
+/* Main Title */
+.main-title{
+    font-size: var(--heading-size);
+    color: var(--beige-color);
+    font-weight: var(--font-600);
+}
+
+/* // FOOTER */
+.footer{
+
+}
+
+/* Footer Title */
+.footer-title{
+    font-size: var(--heading-size);    
+    color: var(--beige-color);
+    font-weight: var(--font-600);
+}
+
+.footer-copyright{
+    color: var(--beige-color);
+}
