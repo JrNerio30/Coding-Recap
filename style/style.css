@@ -100,8 +100,8 @@ h1, h2{
 /* Hero Title */
 .hero-title{
     font-size: var(--heading-size);
+    font-family: var(--nippo-bold);
     color: var(--white-color);
-    font-weight: var(--font-700);
 }
 
 /* Hero Description */
@@ -143,7 +143,7 @@ h1, h2{
 .about-title{
     font-size: var(--heading-size2);
     color: var(--white-color);
-    font-weight: var(--font-600);
+    font-family: var(--nippo-medium);
     align-items: center;
     display: flex;
     
@@ -175,7 +175,7 @@ h1, h2{
 .main-title{
     font-size: var(--heading-size2);
     color: var(--white-color);
-    font-weight: var(--font-600);
+    font-family: var(--nippo-medium);
 }
 
 /* // FOOTER */
@@ -187,7 +187,7 @@ h1, h2{
 .footer-title{
     font-size: var(--heading-size2);    
     color: var(--white-color);
-    font-weight: var(--font-600);
+    font-family: var(--nippo-medium);
 }
 
 .footer-copyright{
