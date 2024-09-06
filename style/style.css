@@ -1,7 +1,8 @@
+@import url(../Nippo_Complete/Fonts/WEB/css/nippo.css);
 body, html{
     scroll-behavior: smooth;
     font-family: 'Poppins';
-    background-color: rgb(0, 50, 51);
+    background-color: black;
 }
 
 .img{
@@ -10,11 +11,15 @@ body, html{
 
 :root{
     --heading-size: clamp(1rem, 3vw, 4vw);
+    --heading-size2: clamp(1rem, 2.3vw, 4vw);
     --white-color: white; 
     --beige-color: beige;
     --black-color: black;
     --font-700: 700;
     --font-600: 600;
+    --nippo-regular: 'Nippo-Regular';
+    --nippo-medium: 'Nippo-Medium';
+    --nippo-bold: 'Nippo-Bold';
 }
 
 /* GLOBAL */
@@ -33,51 +38,10 @@ h1, h2{
     text-align: center;
 }
 
-/* Fade In Animation */
-.about-fade-in{
-    transition: all 300ms;
-    transform: translateY(2rem);
-    opacity: 0;
-}
-
-/* Fade In Animation when visible */
-.about-fade-in.visible{
-    transform: translateY(0rem);
-    opacity: 1;
-}
-
-/* Fade In Animation */
-.main-fade-in{
-    transition: all 300ms;
-    transform: translateY(2rem);
-    opacity: 0;
-}
-
-/* Fade In Animation when visible */
-.main-fade-in.visible{
-    transform: translateY(0rem);
-    opacity: 1;
-}
-
-
-/* Fade In Animation */
-.footer-fade-in{
-    transition: all 300ms;
-    transform: translateY(2rem);
-    opacity: 0;
-}
-
-/* Fade In Animation when visible */
-.footer-fade-in.visible{
-    transform: translateY(0rem);
-    opacity: 1;
-}
-
 /* Navigation Bar */
-nav{
-    background-color: #1f1f1f;
-    border: rgb(72, 71, 71) solid 0.2px;
-    height: 5vh;
+.nav{
+    background-color: #101010;
+    height: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,7 +54,7 @@ nav{
 /* Anchor Navigations */
 .anchor-nav{
     text-transform: capitalize;
-    font-size: 1.20rem;
+    font-size: 0.8rem;
     color: var(--white-color);
     text-decoration: none;
     flex: 1 400px 0;
@@ -98,23 +62,77 @@ nav{
     transition: all 400ms;
 }
 
+/* Navigation Logo */
+.nav-logo{
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* Navigation Menu Container */
+.nav-menu-container{
+    display: flex;
+    gap: 6rem;
+}
+
+/* Nav Portfolio Button */
+.portfolio-nav{
+    color: white;
+    background-color: #D71F5C;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
 /* Anchor Nav Buttons Hover */
 .anchor-nav:hover{
-    color: var(--beige-color);
+    color: var(--white-color);
+}
+
+/* Search Space Span */
+.search-space{
+    padding-right: 1.3rem;
 }
 
 /* // HERO */
 .hero{
-
+    background: url(../assets/darkbackground.jpg) center / cover fixed;
 }
 
 /* Hero Title */
 .hero-title{
     font-size: var(--heading-size);
-    color: var(--beige-color);
+    color: var(--white-color);
     font-weight: var(--font-700);
 }
 
+/* Hero Description */
+.hero-description{
+    color: var(--white-color);
+    max-width: 60rem;
+    width: 100%;
+    text-align: center;
+    line-height: 150%;
+    height: auto;
+}
+
+/* Hero Button */
+.hero-button{
+    color: white;
+    border: none;
+    background-color: black;
+    font-family: var(--nippo-regular);
+    font-size: 1.2rem;
+    padding: 0.2rem 1.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.2rem 0.09rem black;
+    transition: all 300ms;
+}
+
+/* Hero Button Hover */
+.hero-button:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 0.2rem 0.09rem white;
+}
 
 /* // ABOUT */
 .about{
@@ -123,8 +141,8 @@ nav{
 
 /* About Title */
 .about-title{
-    font-size: var(--heading-size);
-    color: var(--beige-color);
+    font-size: var(--heading-size2);
+    color: var(--white-color);
     font-weight: var(--font-600);
     align-items: center;
     display: flex;
@@ -145,24 +163,18 @@ nav{
 
 /* About Description */
 .about-description{
-    color: var(--beige-color);
-    max-width: 50rem;
+    color: var(--white-color);
+    max-width: 45rem;
     width: auto;
     height: auto;
     line-height: 150%;
     padding-inline: 2rem;
 }
 
-
-/* // Main */
-.main{
-
-}
-
 /* Main Title */
 .main-title{
-    font-size: var(--heading-size);
-    color: var(--beige-color);
+    font-size: var(--heading-size2);
+    color: var(--white-color);
     font-weight: var(--font-600);
 }
 
@@ -173,11 +185,11 @@ nav{
 
 /* Footer Title */
 .footer-title{
-    font-size: var(--heading-size);    
-    color: var(--beige-color);
+    font-size: var(--heading-size2);    
+    color: var(--white-color);
     font-weight: var(--font-600);
 }
 
 .footer-copyright{
-    color: var(--beige-color);
+    color: var(--white-color);
 }
