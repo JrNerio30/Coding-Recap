@@ -1,0 +1,39 @@
+/* Fade In Animation */
+.about-fade-in{
+  transition: all 700ms;
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
+/* Fade In Animation when visible */
+.about-fade-in.visible{
+  transform: translateY(0rem);
+  opacity: 1;
+}
+
+/* Fade In Animation */
+.main-fade-in{
+  transition: all 700ms;
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
+/* Fade In Animation when visible */
+.main-fade-in.visible{
+  transform: translateY(0rem);
+  opacity: 1;
+}
+
+
+/* Fade In Animation */
+.footer-fade-in{
+  transition: all 700ms;
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
+/* Fade In Animation when visible */
+.footer-fade-in.visible{
+  transform: translateY(0rem);
+  opacity: 1;
+}
