@@ -10,17 +10,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style/reset.css">
         <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/responsive.css">
         <link rel="stylesheet" href="./style/animation.css">
     </head>
     <body>
         <nav class="nav">
-            <a class="anchor-nav" href="#main">main</a>
-            <a class="anchor-nav" href="#about">about</a>
-            <a class="anchor-nav" href="#footer">footer</a>
+            <i class="fa-solid fa-code nav-logo"></i>
+            <ul class="nav-menu-container">
+                <li class="nav-menu-list">
+                    <a class="anchor-nav" href="#home">Home</a>
+                </li>
+                <li class="nav-menu-list">
+                    <a class="anchor-nav" href="#main">main</a>
+                </li>
+                <li class="nav-menu-list">
+                    <a class="anchor-nav" href="#about">about</a>
+                </li>
+                <li class="nav-menu-list">
+                    <a class="anchor-nav" href="#footer">footer</a>
+                </li>
+                <li class="nav-menu-list">
+                    <a class="anchor-nav" href="#"><span class="search-space">Search</span> <i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li class="nav-menu-list">
+                    <a class="anchor-nav portfolio-nav" href="https://jrnerio30.github.io/Fernando-Nerio-Jr/" target="_blank">Portfolio</a>
+                </li>
+            </ul>
         </nav>
-        <header class="hero center">
+        <header class="hero center" id="home">
             <h1 class="hero-title hero-fade-in">HTML, CSS and JavaScript Recap</h1>
-            <input type="range" min="0" max="360" id="colorChange">
+            <p class="hero-description">Master the essentials of HTML, CSS, and JavaScript with quick recaps and hands-on examples. 
+                Jump back in with confidence—whether it's styling pages, crafting dynamic experiences, or structuring content, we've got you covered!
+            </p>
+            <button class="hero-button">Click Me</button>
         </header>
 
         <section class="about center" id="about">
@@ -37,6 +59,7 @@
 
         <main class="main center" id="main">
             <h2 class="main-title main-fade-in">HTML, CSS and JavaScript</h2>
+            <input type="range" min="0" max="360" id="colorChange">
         </main>
 
         <footer class="footer center" id="footer">
@@ -48,6 +71,7 @@
         <script src="./script/JSFundamentals/variables.js" async></script>
         <script src="./script/JSFundamentals/Interaction.js" async></script>
         <script src="./script/JSFundamentals/typeConversions.js" async></script>
+        <script src="https://kit.fontawesome.com/879ba98a23.js" crossorigin="anonymous"></script>
     </body>
 </html>
 html
