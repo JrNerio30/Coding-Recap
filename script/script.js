@@ -35,11 +35,6 @@ window.addEventListener('scroll', function () {
   }
 });
 
-
-colorChange.addEventListener('input', function () {
-  document.body.style.backgroundColor = 'hsl('+colorChange.value+', 100%, 10%)'
-});
-
 const year = new Date().getFullYear();
 const copyright = `${year} ${"Fernando Nerio Jr."}`
 document.querySelector('.footer-copyright').innerHTML = copyright
